@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Google Classroom</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Javascript Load
+        <script src="scripts.js"></script> -->
+
+    </head>
+
+    <body>
+        <div class="Paswordbox">
+           <b>Enter Password<input id="passwordBox" type="password" onclick="checkPassword()"/></b>
+            <a href="password.html" onclick="return checkPassword()">
+           Enter
+        </a></div>
+
+        <div class="Title">
+            <center><b>Enter Password!</b></center>
+        </div>
+        
+        
+    </body>
+
+    <style>
+
+        body {
+            background-color: rgb(0, 191, 255);
+        }
+        .Paswordbox { 
+            color: white;
+            background-color: black;
+            position: absolute;
+            top: 350px;
+            left: 370px;
+        }
+
+        .Title {
+            font-family: sans-serif;
+            font: bolder;
+            font-size: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border-color: yellow;
+            border-style: solid;
+            border-width: 5px;
+            cursor: default;
+        }
+    </style>
+
+    <script>
+        function checkPassword() {
+        
+            var password = document.getElementById("passwordBox");
+            
+            var passwordText = password.value;
+            
+            if(passwordText == "tyu453#$!") 
+                return true;
+               
+                
+            
+            alert("Incorrect password!");
+            return false;
+            
+        }
+    </script>
+
+</html>
